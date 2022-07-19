@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Reverse Number</title>
+    <script>
+      let num = prompt('Enter the number that you want to reverse it:', 123);
+      let rev = 0;
+      let digit;
+      while (num > 0) {
+        digit = num % 10;
+        rev = rev * 10 + digit;
+        num = parseInt(num / 10);
+      }
+      document.write('Reversed of given number is: ', +rev);
+    </script>
+  </head>
+  <body></body>
+</html>
